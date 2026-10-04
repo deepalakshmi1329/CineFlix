@@ -1,0 +1,129 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f5f7fa;
+    color: #1f2937;
+}
+
+nav {
+    height: 65px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+nav h1 { color: #2563eb; }
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #374151;
+}
+
+button, .nav-button, .main-button {
+    padding: 11px 18px;
+    background: #2563eb;
+    color: white;
+    border: 0;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hero {
+    min-height: calc(100vh - 65px);
+    padding: 150px 10%;
+    background: #eef4ff;
+}
+
+.hero h2 { font-size: 45px; }
+
+.hero p, .auth-text, .bottom-text, .empty {
+    color: #667085;
+}
+
+.auth-page {
+    min-height: calc(100vh - 65px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-box {
+    width: 380px;
+    padding: 35px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.auth-box h1 {
+    text-align: center;
+    color: #2563eb;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.auth-box button {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#message, .bottom-text { text-align: center; }
+
+.bottom-text a { color: #2563eb; }
+
+.dashboard { padding: 40px 7%; }
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.movie-card {
+    padding: 18px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.movie-image {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eaf0ff;
+    color: #2563eb;
+    font-size: 28px;
+}
+
+.movie-card button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.logout-button {
+    background: white;
+    color: #2563eb;
+    border: 1px solid #2563eb;
+}
+
+@media (max-width: 700px) {
+    .movie-grid { grid-template-columns: 1fr 1fr; }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Account - CineFlix</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="auth-page">
+
+    <div class="auth-box">
+        <h1>CineFlix</h1>
+        <h2>Create your account</h2>
+        <p class="auth-text">Start building your personal watchlist.</p>
+
+        <form id="signupForm">
+
+            <label>Name</label>
+            <input id="name" type="text" placeholder="Enter your name" required>
+
+            <label>Email</label>
+            <input id="email" type="email" placeholder="Enter your email" required>
+
+            <label>Password</label>
+            <input id="password" type="password" placeholder="Enter your password" required>
+
+            <button type="submit">Create Account</button>
+
+        </form>
+
+        <p id="message"></p>
+
+        <p class="bottom-text">
+            Already have an account?
+            <a href="/login.html">Log in</a>
+        </p>
+    </div>
+
+</div>
+
+<script src="/signup.js"></script>
+
+</body>
+</html>
